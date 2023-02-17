@@ -4,6 +4,9 @@ ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / scalaVersion := "2.13.10"
 ThisBuild / organization := "com.github.moust"
 
+ThisBuild / semanticdbEnabled := true
+ThisBuild / semanticdbVersion := scalafixSemanticdb.revision
+
 ThisBuild / scalafixDependencies += Dependencies.organizeImports
 
 lazy val root = (project in file("."))
